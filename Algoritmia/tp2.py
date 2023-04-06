@@ -1,6 +1,7 @@
 #Trabajo práctico 2 - Int. a la Algoritmia
 #Ejercicio 2: Desarrollar un programa que permita ingresar dos números enteros A y
-#B a través del teclado. Imprimir su suma y su diferencia.
+#B a través del teclado. Imprimir su suma y su diferencia.
+
 
 """
 A = int(input("Ingresar un número: "))
@@ -33,7 +34,8 @@ edadDias = edad * 365
 print("Su edad en días es: ", edadDias)
 """
 
-#Ejercicio 5: Tres personas invierten dinero para fundar una empresa (no necesariamente en partes iguales). Calcular qué porcentaje invirtió cada una.
+#Ejercicio 5: Tres personas invierten dinero para fundar una empresa (no necesariamente en partes iguales). Calcular qué porcentaje invirtió cada una.
+
 """
 inversor1 = int(input("ingrese cuanto dinero invirtió: "))
 inversor2 = int(input("ingrese cuanto dinero invirtió: "))
@@ -72,3 +74,24 @@ print(capitalTotal)
 #1 yarda = 3 pies
 #1 pulgada = 2,54 cm.
 #1 metro = 100 cm
+"""
+medida = int(input("Ingresar una medida en metros: "))
+medidaCentimetros = medida * 100
+medidaPulgadas = medidaCentimetros  / 2.54
+medidaPies = medidaPulgadas / 12
+medidaYarda = medidaPies / 3
+
+print("Su medida en centimetros es:  ", medidaCentimetros, ",en pulgadas ", medidaPulgadas, ",en pies ", medidaPies, ",y en yardas es ", medidaYarda)
+"""
+#Ejercicio 9: Una inmobiliaria paga a sus vendedores un salario de $50000, más una comisión de $5000 por cada venta realizada, más el 5% del valor de las
+#ventas. Realizar un programa que imprima el número del vendedor y el salario que le corresponde en un determinado mes. Se leen el número
+#del vendedor, la cantidad de ventas que realizó y el valor total de las mismas
+"""
+vendedor   = 1
+salario = 50000
+ventas =int(input("ingrese la cantidad de ventas realizadas en el mes: "))
+valorVentas = int(input("Ingresar el valor total de las ventas: "))
+total=salario + ventas * 5000 + valorVentas * 5 / 100
+
+print("El vendedor número", vendedor, "realizó ", ventas, " ventas por un total de ", valorVentas, "el sueldo a cobrar es ", total)
+"""
