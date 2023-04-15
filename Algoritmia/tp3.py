@@ -61,13 +61,14 @@ else:
 
 """
 libro = int(input("Ingrese el número de páginas del libro para calcular su valor "))
+encuadernacion_rustica, encuadernacion_tela, encuadernacion_especial, precio_por_pagina = 500, 700, 836, 3.20
 
 if libro < 300:
-    print("Su precio es: ", 500 + libro * 3.20)
+    print("Su precio es: ", encuadernacion_rustica + libro * precio_por_pagina)
 elif libro > 300 and libro < 600:
-    print("Su precio es: ", 500 + libro * 3.20 + 200)
+    print("Su precio es: ", encuadernacion_tela + libro * precio_por_pagina )
 else:
-    print("Su precio es: ", 500 + libro * 3.20 + 336)
+    print("Su precio es: ", encuadernacion_especial + libro * precio_por_pagina)
 """
 #Una remisería requiere un programa que calcule el precio de un viaje a partir de
 #la cantidad de kilómetros que desea recorrer el usuario. Para eso cuenta con la siguiente tarifa:
@@ -123,7 +124,7 @@ sindicato = sueldo*3/100
 
 if estadoCivil == 1:
                    print("Su sueldo neto es: ", sueldo + antiguedad * 5 - jubilacion - obraSocial - sindicato)
-if estadoCivil == 2:
+else:
                    print("Su sueldo neto es: ", sueldo + antiguedad * 7 - jubilacion - obraSocial  - sindicato)
                    
 """
